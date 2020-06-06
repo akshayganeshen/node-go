@@ -9,9 +9,9 @@ Go module to easily create Node.js Native Addons.
 Add shared headers in `lib/include/`. These headers can declare functions and
 `extern` values, but should not include any definitions.
 
-Implement any declared functions in a separate Go file. Definitions cannot
-appear in a Go file that uses the `//export` directive. See the cgo guide for
-info about this restriction.
+Implement any declared functions in a separate Go/C file under `lib/cgo/`.
+Definitions cannot appear in a Go file that uses the `//export` directive. See
+the cgo guide for info about this restriction.
 
 ### Go
 
