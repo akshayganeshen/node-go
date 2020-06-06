@@ -3,8 +3,13 @@ clean: clean-lib clean-mod clean-gyp
 
 SOURCE_LIB_FILES = \
   $(wildcard lib/*.go) \
+  $(wildcard lib/**/*.go) \
+  $(wildcard lib/**/*.c) \
   $(wildcard lib/include/*.h)
-SOURCE_MOD_FILES = $(wildcard src/*.cpp)
+SOURCE_MOD_FILES = \
+  $(wildcard src/*.cpp) \
+  $(wildcard src/*.h)
+
 SOURCE_GYP_FILES = binding.gyp
 
 TARGET_LIB_HEADER = lib/libgo.h
