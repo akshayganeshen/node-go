@@ -1,6 +1,7 @@
 # outputs
 build/
 lib/libgo.h
+lib/libgo.a
 
 # intermediates
 gyp.config.stamp
