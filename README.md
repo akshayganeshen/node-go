@@ -1,5 +1,8 @@
 # Node Go
 
+⚠️ DEPRECATED: Please use [napi-go](https://github.com/akshayganeshen/napi-go)
+instead.
+
 Go module to easily create Node.js Native Addons.
 
 ## Developing
